@@ -6,33 +6,36 @@ body {
   font-size: x-large;
 }
 
+/*Estilo para los enlaces del menú principal*/
 .menu nav a:link, a:visited {
   color: white;
-
 }
 
+/*Marca la página que está activa en el menú*/
 .menu nav a.active {
   text-decoration: none;
 }
 
+/*Estilo para los enlaces de las fotos secundarias*/
 #imagenessecundarias a:visited, a:link {
   color: black;
 }
 
+/*Efecto de sombra para las imágenes del site*/
 img {
   -webkit-filter: drop-shadow(2px 2px 3px #02010a);
   filter: drop-shadow(2px 2px 3px #02010a);
 }
 
+/*Estilo para el contenedor de la imagen central del index.html*/
 #imagencentral {
   background-color: #82c3a6;
   text-align: center;
 }
 
+/*Imagen central del index.html*/
 #imagencentral .imgcen img {
   width: 90%;
-}
-#imagencentral .imgcen {
   padding: 20px 0 20px 0;
 }
 
@@ -169,6 +172,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     color: black;
+    margin-bottom: 2%;
   }
 
   footer h3 {
@@ -296,6 +300,7 @@ footer {
     flex-flow: column;
     color: black;
     margin-left: 5%;
+    margin-bottom: 5%;
   }
 
   footer h3 {
