@@ -1,0 +1,11 @@
+body {
+  font-family: 'Dancing Script';
+  background-color: black;
+  color: white;
+  font-size: x-large;
+}
+
+.menu a {
+  color: white;
+  font-size: large;
+}
