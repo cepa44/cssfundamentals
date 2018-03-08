@@ -39,10 +39,12 @@ img {
   padding: 20px 0 20px 0;
 }
 
+/*Centrado de imágenes secundarias*/
 #imagenessecundarias div {
   text-align: center;
 }
 
+/*Efecto de rotación para la imagen*/
 .imagenIzq img{
   transition-property: rotate();
   transition-duration: 0.5s;
@@ -52,6 +54,7 @@ img {
   transform: rotate(10deg);
 }
 
+/*Efecto de movimiento para la imagen*/
 .imagenDer img {
   transition-property: translate();
   transition-duration: 0.5s;
@@ -61,6 +64,7 @@ img {
   transform: translate(20px, -5px);
 }
 
+/*Tamaño para cada imagen dentro de su contenedor*/
 .imagenDer figure img {
   width: 100%;
 }
@@ -68,37 +72,46 @@ img {
   width: 100%;
 }
 
+/*Efecto para imagen de galería blur*/
 #imagenesgalerias .fila1 .imggaleria1 {
   -webkit-filter: blur(10px);
   filter: blur(10px);
 }
 
+/*Efecto de grayscale para las imágenes de la galería*/
 #imagenesgalerias .fila1 .imggaleria2 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
+/*Efecto sepia para la imagen de la galeria*/
 #imagenesgalerias .fila1 .imggaleria3 {
   -webkit-filter: sepia(90%);
   filter: sepia(90%);
 }
 
+/*Efecto de grayscale para las imágenes de la galería*/
 #imagenesgalerias .fila2 .imggaleria1 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
+/*Efecto de grayscale para las imágenes de la galería*/
 #imagenesgalerias .fila2 .imggaleria3 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
+/*Color y borde para el footer*/
 footer {
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
 }
 
+/*Media Query para resolución de desktop*/
 @media (min-width:900px) {
+
+  /*Aspectos de estilo para el contenedor principal, animación y posición*/
   .contenedor {
     display: flex;
     flex-flow: column;
@@ -107,6 +120,8 @@ footer {
     animation-name: contenedor-animacion;
     animation-duration: 1s;
   }
+
+  /*Animación para el contenedor*/
   @-webkit-keyframes contenedor-animacion {
   	0% {
   		position: relative;
@@ -122,6 +137,7 @@ footer {
   	}
   }
 
+  /*Estilo para el header y bordes*/
   header {
     background-color: #5b7989;
     border-radius: 10px 10px 0 0;
@@ -130,44 +146,57 @@ footer {
 
   }
 
+  /*Estilo para el header título*/
   header .titulo {
     text-shadow: 2px 2px #02010a;
     padding: 10px 0 10px 20px;
     width: 60%;
   }
 
+  /*Estilo para el menú del header*/
   header .menu {
     text-align: right;
     padding: 10px 20px 10px 0;
     width: 40%;
   }
 
+  /*Estilo para fila de imágenes secundarias para que se pueda mostrar en 2 columnas*/
   #imagenessecundarias {
     display: flex;
     flex-flow: row nowrap;
     background-color: #d5c75f
   }
+
+  /*Estilo para fila de imágenes galería fila 1 para que se pueda mostrar en 3 columnas*/
   #imagenesgalerias .fila1 {
     display: flex;
     flex-flow: row nowrap;
     background-color: #d5c75f
   }
 
+  /*Estilo para fila de imágenes galería fila 2 para que se pueda mostrar en 3 columnas*/
   #imagenesgalerias .fila2 {
     display: flex;
     flex-flow: row nowrap;
     background-color: #d5c75f
   }
+
+  /*Estilo para cada imagen de la galería*/
   div[class*="imggaleria"] {
     width: 33%;
   }
+
+  /*Tamaño para cada imagen secundaria de index*/
   .imagenIzq {
     width: 50%;
   }
+
+  /*Tamaño para cada imagen secundaria de index*/
   .imagenDer {
     width: 50%;
   }
 
+  /*Estilo para el contenedor del pie de página*/
   .piepagina {
     display: flex;
     flex-flow: row nowrap;
@@ -175,16 +204,13 @@ footer {
     margin-bottom: 2%;
   }
 
+  /*Estilo para títulos del footer*/
   footer h3 {
     margin-bottom: 0;
     margin-top: 5%;
   }
 
-  footer .sociales figure img {
-    width: 10%;
-    margin-left: 0;
-  }
-
+  /*Estilo para contacto*/
   footer .contacto {
     margin-left: 2%;
     margin-bottom: 2%;
@@ -192,6 +218,7 @@ footer {
     font-size: 0.75em;
   }
 
+  /*Estilo para términos*/
   footer .terminos {
     margin-left: 2%;
     margin-bottom: 2%;
@@ -199,6 +226,7 @@ footer {
     font-size: 0.75em;
   }
 
+  /*Estilo para redes sociales*/
   footer .sociales {
     margin-left: 2%;
     margin-bottom: 2%;
@@ -206,11 +234,19 @@ footer {
     font-size: 0.75em;
   }
 
+  /*Estilo contenedor de imágenes redes sociales*/
   footer .sociales figure {
     margin-left: 0;
     margin-bottom: 0;
   }
 
+  /*Tamaño para iconos de redes sociales*/
+  footer .sociales figure img {
+    width: 10%;
+    margin-left: 0;
+  }
+
+  /*Estilo contenedor para derechos*/
   footer .derechos {
     margin-left: 2%;
     margin-bottom: 2%;
@@ -219,7 +255,10 @@ footer {
   }
 }
 
+/*Estilos responsive para resolución menor a la desktop*/
 @media (max-width:899px) {
+
+  /*Aspectos de estilo para el contenedor principal, animación y posición*/
   .contenedor {
     display: flex;
     flex-flow: column;
@@ -229,6 +268,7 @@ footer {
     animation-duration: 1s;
   }
 
+  /*Animación para el contenedor*/
   @-webkit-keyframes contenedor-animacion {
     0% {
       position: relative;
@@ -244,6 +284,7 @@ footer {
     }
   }
 
+  /*Estilo para el header y bordes*/
   header {
     background-color: #5b7989;
     border-radius: 10px 10px 0 0;
@@ -252,6 +293,7 @@ footer {
     flex-wrap: wrap;
   }
 
+  /*Estilo para el header título*/
   header .titulo {
     text-align: center;
     text-shadow: 2px 2px #02010a;
@@ -260,6 +302,7 @@ footer {
     order: 1;
   }
 
+  /*Estilo para el menú del header*/
   header .menu {
     text-align: center;
     padding: 10px 10px 10px 0;
@@ -267,34 +310,43 @@ footer {
     order: 2;
   }
 
+  /*Estilo para columna de imágenes secundarias para que se pueda mostrar en 1 columna*/
   #imagenessecundarias {
     display: flex;
     flex-flow: column;
     background-color: #d5c75f
   }
+
+  /*Tamaño para cada imagen secundaria de index*/
   .imagenIzq {
     width: 100%;
     order: 1;
   }
+
+  /*Tamaño para cada imagen secundaria de index*/
   .imagenDer {
     width: 100%;
     order: 2;
   }
 
+  /*Estilo para mostrar en una sola columna móvil la galería*/
   #imagenesgalerias {
     display: flex;
     flex-flow: column;
     background-color: #d5c75f
   }
 
+  /*Márgenes para la fila 1*/
   #imagenesgalerias .fila1 {
     margin: auto;
   }
 
+  /*Márgenes para la fila 2*/
   #imagenesgalerias .fila2 {
     margin-top: 0px;
   }
 
+  /*Estilo para pie de página móvil*/
   .piepagina {
     display: flex;
     flex-flow: column;
@@ -303,11 +355,13 @@ footer {
     margin-bottom: 5%;
   }
 
+  /*Estilo para títulos del footer*/
   footer h3 {
     margin-bottom: 0;
     margin-top: 5%;
   }
 
+  /*Estilo para contacto*/
   footer .contacto {
     margin-left: 2%;
     margin-bottom: 2%;
@@ -315,6 +369,7 @@ footer {
     font-size: 0.75em;
   }
 
+  /*Estilo para términos*/
   footer .terminos {
     margin-left: 2%;
     margin-bottom: 2%;
@@ -322,6 +377,7 @@ footer {
     font-size: 0.75em;
   }
 
+  /*Estilo para redes sociales*/
   footer .sociales {
     margin-left: 2%;
     margin-bottom: 2%;
@@ -329,16 +385,19 @@ footer {
     font-size: 0.75em;
   }
 
-  footer .sociales figure img {
-    width: 5%;
-    margin-left: 0;
-  }
-
+    /*Estilo contenedor de imágenes redes sociales*/
   footer .sociales figure {
     margin-left: 0;
     margin-bottom: 0;
   }
 
+  /*Tamaño para iconos de redes sociales*/
+  footer .sociales figure img {
+    width: 5%;
+    margin-left: 0;
+  }
+
+  /*Estilo contenedor para derechos*/
   footer .derechos {
     margin-left: 2%;
     margin-bottom: 2%;
